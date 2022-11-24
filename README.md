@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/sajia-h/advice-generator.git)
-- Live Site URL: [Add live site URL here](https://sajia-h.github.io/advice-generator/)
+- Solution URL: [Code of my first attempt can be found here](https://github.com/sajia-h/advice-generator.git)
+- Live Site URL: [Here's how my first attempt looks](https://sajia-h.github.io/advice-generator/)
 
 ## My process
 
