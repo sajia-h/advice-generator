@@ -1,0 +1,157 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* ------------------- */
+/* Custom Properties   */
+/* ------------------- */
+
+:root {
+    --gap: 0.5em;
+    --neon-green: hsl(150, 100%, 66%);
+  }
+  
+  /* ------------------- */
+  /* Reset               */
+  /* ------------------- */
+  
+  /* https://piccalil.li/blog/a-modern-css-reset/
+  
+  /* Box sizing */
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Reset margins */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 0;
+  }
+  
+  /* set up the body */
+  body {
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  
+  /* make images easier to work with */
+  img,
+  picture {
+    margin:auto;
+    max-width: 100%;
+    display: block;
+   
+  }
+  
+  /* make form elements easier to work with */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+    color: hsl(193, 38%, 86%);
+    background-color: hsl(218, 23%, 16%); 
+    font-size: 28px;
+    font-weight: 800;
+    
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card {
+    width:65vw;
+    padding:5rem;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+  }
+
+  .card-body{
+  
+  }
+
+  .card-bottom-border {
+    margin-top:2rem;
+    justify-self: center;
+    width:45vw;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--neon-green);
+    letter-spacing: 5px;
+    margin-bottom:2rem;
+  }
+
+  .button {
+    position: relative;
+    display: block;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5rem;
+    border: 10px solid  var(--neon-green);
+    background-color: var(--neon-green);
+    margin:-7rem auto;
+    width:4rem;
+  }
+
+  .glow-btn:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 25px var(--neon-green);
+    cursor: pointer;
+  }
+
+  #rdm-gen {
+    width:1.5rem;
+    background-color: var(--neon-green) ;
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        width:fit-content;
+        font-size: 14px;
+        font-weight: 800;    
+  }
+  
+  .card {
+    padding:2.5rem;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+  }
+
+  .card-bottom-border{
+    content: url(img/pattern-divider-mobile.svg);
+  }
+
+h2 {
+    font-size: 7px;
+}
+
+.button {
+    width:10vw;
+}
+
+#rdm-gen {
+    width: 3vw;
+}
+    
+}
